@@ -38,9 +38,12 @@ for (let i = 0; i<fruits.length; i++){
 }
 
 function greet(name){
-    console.log(`Greetings, dear ${name}`)
+    return `Greetings, dear ${name}`
 }
-greet('Benjamin')
+
+let greetMate = greet('Benjamin')
+
+
 
 fruits = fruits.map(function(fruit){
     return fruit + '!'
