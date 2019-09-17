@@ -21,5 +21,3 @@ drinks.forEach(function(drink){
 console.log(drinks.filter(function(drink){
     return drink.startsWith('p')
 }))
-
-
