@@ -17,7 +17,7 @@ const interline = lineCount - 2
 // The square should have as many lines as lineCount is
 let i = 1
 let j = 0
-while(i <=6){
+while(i <=lineCount){
     if (i == 1 || i == lineCount){
         console.log('%'.repeat(lineCount))
     }else{
