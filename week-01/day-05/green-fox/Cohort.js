@@ -28,6 +28,8 @@ class Cohort {
         this.mentors.push(Mentor)
     }
     info(){
-        console.log(`The name cohort has ${this.students.size} students and ${this.mentors.size} mentors.`)
+        console.log(`The ${this.name} cohort has ${this.students.length} students and ${this.mentors.length} mentors.`)
     }
 }
+
+module.exports = Cohort
