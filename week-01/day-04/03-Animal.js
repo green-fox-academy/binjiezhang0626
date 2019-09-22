@@ -24,8 +24,10 @@ class Animal{
     }
 }
 const tiger = new Animal()
-console.log(tiger)
-tiger.play()
-console.log(tiger)
-tiger.drink()
-console.log(tiger)
+// console.log(tiger)
+// tiger.play()
+// console.log(tiger)
+// tiger.drink()
+// console.log(tiger)
+
+module.exports = Animal
