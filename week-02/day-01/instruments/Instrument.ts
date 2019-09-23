@@ -5,8 +5,7 @@ abstract class Instrument {
     constructor (name: string) {
         this.name =name
     }
-
     abstract play(): void
 }
 
-export {Instrument} 
+export {Instrument}

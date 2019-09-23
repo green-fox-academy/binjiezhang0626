@@ -1,4 +1,4 @@
-interface Flyable {
+interface Flyable1 {
     ammoStorage: number
     maximumAmmo: number
     damage: number
@@ -7,7 +7,7 @@ interface Flyable {
     isPriority(): boolean
 }
 
-abstract class Aircraft implements Flyable {
+abstract class Aircraft implements Flyable1 {
         ammoStorage: number
         maximumAmmo: number
         damage: number
@@ -49,13 +49,13 @@ class F16 extends Aircraft {
 }
 
 class Carrier {
-    aircraftStorage: Flyable[]
+    aircraftStorage: Flyable1[]
 
     constructor(){
         this.aircraftStorage = []
     }
 
-    addNewAircraft (newAircraft: Flyable) : void {
+    addNewAircraft (newAircraft: Flyable1) : void {
         this.aircraftStorage.push(newAircraft)
     }
 }
