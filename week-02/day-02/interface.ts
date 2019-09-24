@@ -1,3 +1,5 @@
+'use strict'
+
 interface LinkedList {
     add(value: string, index?: number): void;
     get(index: number): string;
