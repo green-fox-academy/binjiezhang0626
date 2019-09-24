@@ -33,6 +33,5 @@ class Student extends Person{
         return this.age//you can't get the age cause is private value in class Person
     }
 }
-
 const person1 = new Person('Mate', 28)
 console.log(person1.addSkill('JS'))
