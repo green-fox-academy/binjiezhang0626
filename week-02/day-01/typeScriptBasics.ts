@@ -32,9 +32,6 @@ class Student extends Person{
     getAge(): number {
         return this.age//you can't get the age cause is private value in class Person
     }
-
-
-
 }
 
 const person1 = new Person('Mate', 28)
