@@ -2,6 +2,7 @@
 
 import {Stacks} from './Stack'
 import {Queues} from './Queues'
+import {LinkedLists} from './LinkedLists'
 
 console.log('------Stack test------')
 const stacks = new Stacks()
@@ -27,4 +28,14 @@ console.log(queues.remove())
 console.log(stacks.peek())
 console.log(stacks.empty())
 console.log(queues.remove())
+console.log('------LinkedList test------')
+const linkedlist = new LinkedLists()
+linkedlist.add('hello')
+linkedlist.add('world')
+linkedlist.add('hahaha',-1)
+console.log(linkedlist)
 
+linkedlist.removeItem('hello')
+console.log(linkedlist.get(0))
+console.log(linkedlist.get(1))
+console.log(linkedlist.get(2))
