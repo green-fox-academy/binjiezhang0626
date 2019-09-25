@@ -4,7 +4,7 @@ function binarySearch (array, value) {
     let low = 0
     let high = array.length - 1
     while (low <= high) {
-        let middle = parseInt ( (low + high)/ 2 )
+        let middle = Math.floor((high + low)/ 2 )
         if (value == array[middle]) {
             return middle
         } else if (value > array[middle]) {
@@ -13,8 +13,8 @@ function binarySearch (array, value) {
             high = middle - 1
         }
     }
-    return -1
+    return 'Not exist this value.'
 }
 
-let array1 = [10,1,6,4,9,3,7,5,2,8]
-console.log(binarySearch ( array1, 4))
+let array2 = [1,2,3,4,5,6,7,8,9,10]
+console.log(binarySearch (array2, 8))
