@@ -79,7 +79,9 @@ class LinkedLists implements LinkedList{
 
     removeItem(value: string): void {
         if (this.head === null) {
-            throw new RangeError(`Value ${value} does not exist in the list.`)
+            console.log(`Value ${value} does not exist in the list.`)
+            return 
+            // throw new RangeError(`Value ${value} does not exist in the list.`)
         } else {
             let previous = this.head
             let current = this.head
@@ -88,7 +90,6 @@ class LinkedLists implements LinkedList{
                 current = current.next
             }
             if (current !== null) {
-                previous.value = current.value
                 previous.next = current.next
                 console.log('The item has been removed.')
             }
