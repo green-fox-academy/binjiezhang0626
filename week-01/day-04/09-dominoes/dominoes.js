@@ -30,11 +30,14 @@ const orderDominoes = dominoes => {
     if (isAdjacent(dominoes[i], dominoes[i + 1])) {
       continue
     }
+    
+
     for (let j = i + 2; j < dominoes.length; j++) {
       if (isAdjacent(dominoes[i], dominoes[j])) {
         let tempDomino = dominoes[i + 1]
         dominoes[i + 1] = dominoes[j]
         dominoes[j] = tempDomino
+        
       }
     }
   }

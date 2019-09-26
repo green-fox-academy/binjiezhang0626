@@ -19,7 +19,7 @@ class Farm {
         let freePlace = this.slots - this.animals.length
         if (freePlace > 0){
             this.animals.push(animal)
-            this.slots --
+            this.slots--
         }else {
             console.log('There is no place for new animal.')
         }

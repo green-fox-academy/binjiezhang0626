@@ -10,7 +10,7 @@ class Station{
             {
                 this.gasAmount = this.gasAmount - car.capacity
                 car.gasAmount = car.gasAmount + car.capacity
-                car.capacity = car.capacity - car.capacity
+                // car.capacity = car.capacity - car.capacity
             }else{
                 console.log('Gas is filled.')
             }   

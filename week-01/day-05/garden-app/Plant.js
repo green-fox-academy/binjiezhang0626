@@ -21,7 +21,7 @@ class Plant{
         }
     }  
     watering(water,count){
-        this.waterAmount += this.absorbRate* (water/count)
+        this.waterAmount += this.absorbRate * (water/count)
         this.needwater = (this.waterAmount <= this.minimumWater)
     }
 }
