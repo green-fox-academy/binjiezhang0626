@@ -91,6 +91,14 @@ class Board{
         return neighbors
     }
 
+    revealCell(row, column){
+        if (this.gameBoard[row][column].mined) {
+            gameover
+        } else {
+            
+        }
+    }
+
 
 }
 
