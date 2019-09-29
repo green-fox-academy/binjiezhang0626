@@ -15,11 +15,13 @@ function frameFunction(){
     // but it is not using anonym functions
     multiPurposeFunction(exampleNonAnonymFunction());
     // write your code here
-
-    function action1(p) {
-        return p*p
-    }
+    //anonym function
+    const action1 = function(p) { return p*p }
+    //arrow function
+    const action2 = (p)=> {return p*p}
+    
     multiPurposeFunction(action1)
+    multiPurposeFunction(action2)
 }
 
 frameFunction();
@@ -37,11 +39,18 @@ function multiPurposeFunction(action){
 
 function frameFunction(){
    // Write your code here
-   function action(p1,p2)  {
+   //anonym function
+   const action3 =  function(p1,p2)  {
        if (p1 === '') {return p2}
        else {return p1 + ' ' + p2}
    }
-   multiPurposeFunction(action)
+   //arrow function
+   const action4 = (p1,p2) => {
+        if (p1 === '') {return p2}
+        else {return p1 + ' ' + p2}
+   }
+   multiPurposeFunction(action3)
+   multiPurposeFunction(action4)
 
 }
 
