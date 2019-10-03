@@ -42,7 +42,6 @@ class set {
 }
 
 let set1 = new set()
-
 set1.add(1).add(2).add(3).add(4)
 console.log(set1)
 console.log(set1.check([1,2],[2,3]))
