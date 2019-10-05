@@ -12,7 +12,7 @@ h1 {
   }
   
   .fruits {
-    list-style: inside;
+    /* list-style: inside; */
     color: black;
   }
   
