@@ -49,7 +49,7 @@ li {
     flex-grow: 2;
     order:2;
 }
-.sider{
+.sidebar{
     margin-right: 15px;
     background-color: green;
     flex-grow: 1;
