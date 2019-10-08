@@ -3,19 +3,18 @@ body {
     justify-content: center;
   }
 
-.container{
-    width: 800px;
-    height: 300px;
+  .container{
+    height: 400px;
+    width: 100%;
     background-color: yellow;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-.item{
+  }
+  .item{
+    height:100px;
     width: 100px;
-    height: 100px;
     background-color: purple;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    margin-right: 10px;
+  }

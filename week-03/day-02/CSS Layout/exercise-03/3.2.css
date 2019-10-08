@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container{
+    height: 400px;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  .item{
+    height:100px;
+    width: 100px;
+    background-color: purple;
+    margin-right: 10px;
+  }
+
+  .item:last-of-type {
+    margin: 0;
+  }
