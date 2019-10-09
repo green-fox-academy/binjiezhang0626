@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Workshop: innerHTML, textContent</title>
+  </head>
+  <body>
+    <p class="apple">apple</p>
+    <p class="balloon">banana</p>
+    <p class="cat">car</p>
+    <p class="animals">goat rabbit <strong>cat</strong> dog</p>
+
+    <!-- You can work in the html or in a separate js file. Like: -->
+    <script>
+
+    
+        let nodes = document.querySelectorAll('p:not(:last-of-type)');
+        let lastNode = document.getElementsByClassName('animals')[0];
+        for (let node of nodes) {
+            // 1)  Fill every paragraph with the last one's content.
+            node.innerText += ' ' + lastNode.innerText;
+            // 2)  Do the same again, but you should keep the cat strong.
+            node.innerHTML += ' ' + lastNode.innerHTML;
+        }
+    </script>
+    <!-- OR
+    <script src="content-1.js"></script> -->
+  </body>
+</html>
