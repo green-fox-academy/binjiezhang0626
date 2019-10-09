@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Workshop: QuerySelector</title>
+  </head>
+  <body>
+    <section class="container">
+      <div id="b325" class="asteroid">The King</div>
+      <div class="asteroid b326">The Conceited Man</div>
+    </section>
+    <p class="asteroid big">The Businessman</p>
+    <div class="asteroid b329 big">The Lamplighter</div>
+
+    <!-- You can work in the html or in a separate js file. Like: -->
+    <script>
+        'use strict'
+    //   1. store the element that says 'The King' in the 'king' variable.
+    //   console.log it.
+        let king = document.getElementById('b325')
+        console.log('king',king)
+    //   2. store 'The Businessman' and 'The Lamplighter'
+    //   in the 'businessLamp' variable.
+    //   console.log each of them.
+        let businessLamp = document.getElementsByClassName('big')
+        for (let node of businessLamp){
+            console.log(node)
+        }
+    //   3. store 'The King' and 'The Conceited Man'
+    //   in the 'conceitedKing' variable.
+    //   alert them one by one.
+        let conceitedKing = document.querySelectorAll('section div')
+        console.log(conceitedKing)
+        for (let node of conceitedKing){
+            alert(node.innerText)
+        }
+    //   4. store 'The King', 'The Conceited Man' and 'The Lamplighter'
+    //   in the 'noBusiness' variable.
+    //   console.log each of them.
+        let noBusiness = document.querySelectorAll('.asteroid:not(#b325)')
+        console.log(noBusiness)
+    </script>
+    <!-- OR
+    <script src="queryselector-1.js"></script> -->
+  </body>
+</html>
