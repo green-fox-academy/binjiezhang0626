@@ -1,8 +1,9 @@
 const button = document.querySelector('button')
 const para = document.querySelector('p')
-const onClickFunction = event => {
+const onClickFunction = () => {
     setTimeout(() => {
-      para.toggleAttribute('hidden')
+    //   para.toggleAttribute('hidden')
+      para.removeAttribute('hidden')
     }, 2000)
   }
 
