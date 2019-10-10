@@ -47,5 +47,4 @@ const onClickFunction = event => {
     }
 }
 
-
 nav.addEventListener('click', onClickFunction)
