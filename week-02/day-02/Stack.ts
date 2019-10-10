@@ -8,11 +8,13 @@ class Stacks implements Stack{
         this.stacks = []
     }
     empty(): boolean {
-        if(this.stacks.length === 0) {
-            return true
-        } else {
-            return false
-        }
+
+        return this.stacks.length === 0
+        // if(this.stacks.length === 0) {
+        //     return true
+        // } else {
+        //     return false
+        // }
     }    
     peek(): string {
         if (this.stacks.length === 0) {

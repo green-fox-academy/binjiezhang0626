@@ -18,13 +18,13 @@ class LinkedLists implements LinkedList{
         create a new list node object and store the data in it.
         The node will be added to the end of the exiting list.
         */
-       if (this.index === undefined){
+       if (!this.index){
             /*the index undefined */
-            if(this.head === null){
+            if(!this.head){
                 this.head = newNode
             } else {
                 let current = this.head
-                while(current.next != null) {
+                while(current.next) {
                     current = current.next
                 }
                 current.next = newNode
@@ -35,7 +35,7 @@ class LinkedLists implements LinkedList{
             If we want to add a node in special index, 
             we should check the input index first.
             */
-            if (this.head === null) {
+            if (!this.head) {
                 throw new RangeError (`Index ${index} does not exist in the list.`)
             }
             if (index === 0) {
