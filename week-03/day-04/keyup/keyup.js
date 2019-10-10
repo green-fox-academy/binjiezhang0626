@@ -1,3 +1,5 @@
+'use strict'
+
 const title = document.querySelector('h1')
 const keyup = event => {
     console.log(event)
