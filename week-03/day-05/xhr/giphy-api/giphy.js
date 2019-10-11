@@ -1,3 +1,5 @@
+'use strict'
+
 const appendUl = number => {
     let ul = document.createElement('ul')
     document.body.appendChild(ul)
@@ -46,6 +48,6 @@ const handleClick = (height, width, url) => {
   }
   dataRequest.open(
     'GET',
-    `https://api.giphy.com/v1/gifs/trending?api_key=gAIr1h0t27DN4KP7zANsfZxc0ZMt9kbs&limit=16&rating=PG-13`
+    'https://api.giphy.com/v1/gifs/trending?api_key=gAIr1h0t27DN4KP7zANsfZxc0ZMt9kbs&limit=16&rating=PG-13'
   )
   dataRequest.send()
