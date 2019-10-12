@@ -6,10 +6,10 @@ const passed = document.getElementById('passedTime')
 let currentTime = new Date()
 window.onload = () => {
     current.textContent = currentTime
-    modifyDateCSS(current)
+    modifyCSS(current)
 }
 
-const modifyDateCSS = date => {
+const modifyCSS = date => {
     date.style.color = "orangered";
     date.style.backgroundColor = "lightgrey";
     date.style.border = "1px solid lightgrey";
@@ -28,5 +28,5 @@ const waitForButtonClicked = button => {
 waitForButtonClicked(button)
   .then(timeDiff => {
     passed.textContent = timeDiff
-    modifyDateCSS(passed)
+    modifyCSS(passed)
   })
