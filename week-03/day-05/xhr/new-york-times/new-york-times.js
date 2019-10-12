@@ -1,5 +1,5 @@
 'use steict'
-
+const URL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=the+moon+landing+by+Apollo+11&api-key=ok8dG2DZLb2WbRmLU6S2sYHI2c7Sl3mQ'
 const createAnArticle = (headline, snippet, date, link) => {
   let article = document.createElement('article')
   let head = document.createElement('h1')
@@ -48,7 +48,7 @@ dataRequest.onreadystatechange = () => {
     appendArticlesToUl(articles)
   }
 }
-dataRequest.open('GET', 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=the+moon+landing+by+Apollo+11&api-key=ok8dG2DZLb2WbRmLU6S2sYHI2c7Sl3mQ')
+dataRequest.open('GET', URL)
 dataRequest.send()
 
 console.log(dataRequest)
