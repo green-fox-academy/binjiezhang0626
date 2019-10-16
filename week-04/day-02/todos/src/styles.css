@@ -1,0 +1,76 @@
+.heading {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    color: #b8b8b8;
+  }
+  
+.todo-item {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    line-height: 2.2;
+    color: #b8b8b8;
+    text-align: left;
+    margin-left:100px;
+  }
+  
+.switchBtn{
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    line-height: 2.2;
+    color: #b8b8b8;
+    border:none;
+}
+.button-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    color: #ffffff;
+    background-color: rgb(232, 79, 209)
+  }
+.delete{
+    width:25px;
+    height:25px;
+    border:none;
+    background: url("./components/trash.svg");
+}
+.todos{
+    text-align: center;
+    margin: 3% auto;
+    background-color: #ffffff;
+    border: solid 1px rgb(223, 220, 220);
+    border-radius: 3px;
+    width: 600px;
+}
+.theme{
+    
+    margin: 3% auto;
+    background-color: #ffffff;
+    border: solid 1px rgb(223, 220, 220);
+    border-radius: 3px;
+    width: 600px;
+}
+.uncheckedImg{
+    width:25px;
+    height:25px;
+    background-image: url('./components/unchecked.svg');
+    background-repeat: no-repeat;
+}
+.checkedImg{
+    width:25px;
+    height:25px;
+    background-image: url('./components/checked.svg');
+    background-repeat: no-repeat;
+}
+.input{
+    color: #b8b8b8;
+    font-size: 26px;
+    margin: 20px 0;
+    justify-content: center; 
+    /* display: flex; */
+    flex-direction: row;
+  }
+  body{
+    background-color: #45EEC5 ;
+  }
