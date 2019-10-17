@@ -1,15 +1,15 @@
 import React from 'react';
 
-function bigImg(props) {
-    const {name, description} = props
+function BigImg() {
+    
     return(
         <div className="bigImg">
             <div className="blackGlass">
-                <h3>name</h3>
-                <p>description</p>
+                <h3>Bas glacier d'Arolla, Arolla, Switzerland</h3>
+                <p>The bas glacier d'Arolla is impressive because it is raw, wild and harsh.</p>
             </div>
         </div>
     )
 }
 
-export default bigImg;
+export default BigImg;
