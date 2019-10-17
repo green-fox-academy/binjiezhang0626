@@ -1,13 +1,31 @@
 let Img = [
         {
-            name:'Santi Cosma e Damiano, Italy',
-            description: 'I took this picture while taking a walk. It was 4 pm in a small town between rome and naples.',
-            url:'https://unsplash.com/photos/YnHOIroyUYo'
+            name:`Bas glacier d'Arolla, Arolla, Switzerland`,
+            description: `The bas glacier d'Arolla is impressive because it is raw, wild and harsh.`
 
         },
         {
-            name:'South Iceland, Iceland',
-            description: 'A typical icelandic landscape in winter.',
-            url:'https://unsplash.com/photos/6Pzy2yyih1Y'
+            name:'Neuschwanstein Castle, Schwangau, Germany',
+            description: 'Castle Neuschwansein, lovely place.'
+        },
+        {
+            name:'London, United Kingdom',
+            description: 'Photo of Elizabeth Tower and big Ben.'
+        },
+        {
+            name:'New York, United States',
+            description: 'Looking up to the Manhattan Bridge.'
+        },
+        {
+            name:'Beijing, China',
+            description: 'A black hole filled with history in the middle of a city full of light.'
+        },
+        {
+            name:'Budapest, Hungary',
+            description: 'The Széchenyi Chain Bridge.'
+        },
+        {
+            name:'Paris, France',
+            description: 'Louvre Museum.'
         }
     ]

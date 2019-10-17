@@ -1,7 +1,7 @@
 import React from 'react';
 
 function bigImg(props) {
-    const {name, description, url} = props
+    const {name, description} = props
     return(
         <div className="bigImg">
             <div className="blackGlass">
