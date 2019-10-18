@@ -9,21 +9,14 @@ const Images = [
     './pictures/Paris.jpeg',
     './pictures/Switzerland.jpeg'
   ];
-function Navigation() {
+function Navigation(props) {
     return (
         <div className="Navigation">
             {
-                Images.map((image) => {
-                    return <div className="item" style={{'backgroundImage': `url(${image})`}}></div>
+                Images.map((image,index) => {
+                    return <div className="item" style={{'backgroundImage': `url(${image})`}} onClick={() => props.changeIndex(index)}></div>
                 })
             }
-          {/* <div className="item" style={{'backgroundImage': `url(${Images[1]})`}}></div>
-          
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div> */}
         </div>
     ) 
 }

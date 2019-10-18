@@ -1,12 +1,11 @@
 import React from 'react';
 
-function BigImg() {
-    
+function BigImg(props) {
     return(
-        <div className="bigImg">
-            <div className="blackGlass">
-                <h3 className="text">Arolla, Switzerland</h3>
-                <p className="text">The bas glacier d'Arolla is impressive because it is raw, wild and harsh.</p>
+        <div className="bigImg" style={{'backgroundImage': `url(${props.images[props.index].url})`}}>
+            <div className="blackGlass" >
+                <h3 className="text">{props.images[props.index].name}</h3>
+                <p className="text">{props.images[props.index].description}</p>
             </div>
         </div>
     )

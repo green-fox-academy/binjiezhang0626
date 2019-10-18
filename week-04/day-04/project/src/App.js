@@ -7,20 +7,24 @@ import Navigation from './navigation';
 class App extends React.Component{
   constructor(props) {
     super(props)
+    this.state = {index:0}
+  }
+  changeIndex = imgIndex => {
+    this.setState({index: imgIndex})
   }
   render() {
     return(
       <div className="App">
         <div className="Screen">
           <div className="left">
-            <button></button>
+            <div className="arrow"></div>
           </div>
-          <BigImg />
+          <BigImg index={this.state.index} images={Img}/>
           <div className="right">
-            <button></button>
+          <div className="arrow"></div>
           </div>
         </div>
-        <Navigation />
+        <Navigation changeIndex={this.changeIndex}/>
       </div>
       
     )
