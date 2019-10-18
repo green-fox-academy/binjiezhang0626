@@ -1,5 +1,5 @@
 .App{
-  margin-top:200px;
+  margin-top:150px;
   align-items: center;
 }
 .Screen {
@@ -27,6 +27,8 @@
 
 .bigImg{
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   margin:auto;
   width: 800px;
   height: 400px;
@@ -34,6 +36,10 @@
   background-repeat: none;
   background-size:100% 100%;
   /* -moz-background-size:100% 100%; */
+}
+.text{
+  color:white;
+  margin-left: 10px;
 }
 .blackGlass{
   
@@ -49,7 +55,6 @@
   flex-direction: row;
   height: 100px;
   width: 400px;
-
   justify-content: space-between;
 }
 .item{

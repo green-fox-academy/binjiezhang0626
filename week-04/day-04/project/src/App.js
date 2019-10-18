@@ -12,9 +12,13 @@ class App extends React.Component{
     return(
       <div className="App">
         <div className="Screen">
-          <div className="left"></div>
+          <div className="left">
+            <button></button>
+          </div>
           <BigImg />
-          <div className="right"></div>
+          <div className="right">
+            <button></button>
+          </div>
         </div>
         <Navigation />
       </div>

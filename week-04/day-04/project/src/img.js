@@ -1,11 +1,11 @@
 let Img = [
         {
-            name:`Bas glacier d'Arolla, Arolla, Switzerland`,
+            name:`Arolla, Switzerland`,
             description: `The bas glacier d'Arolla is impressive because it is raw, wild and harsh.`
 
         },
         {
-            name:'Neuschwanstein Castle, Schwangau, Germany',
+            name:'Schwangau, Germany',
             description: 'Castle Neuschwansein, lovely place.'
         },
         {
