@@ -13,10 +13,10 @@ class App extends React.Component {
     this.setState({ index: imgIndex })
   }
   changeIndexClickLeft = () => {
-    this.setState((currentState) => { return currentState.index === 0 ? ({ index: 6 }) : ({ index: currentState.index - 1 }) })
+    this.setState((currentState) => { return currentState.index === 0 ? ({ index: Img.length - 1 }) : ({ index: currentState.index - 1 }) })
   }
   changeIndexClickRight = () => {
-    this.setState((currentState) => { return currentState.index === 6 ? ({ index: 0 }) : ({ index: currentState.index + 1 }) })
+    this.setState((currentState) => { return currentState.index === Img.length - 1 ? ({ index: 0 }) : ({ index: currentState.index + 1 }) })
   }
   render() {
     return (
