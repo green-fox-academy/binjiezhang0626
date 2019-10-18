@@ -6,7 +6,7 @@
   margin:auto;
   display:flex;
   flex-direction: row;
-  width: 900px;
+  width: 950px;
   height: 400px;
 }
 .Bar{
@@ -22,7 +22,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   margin:auto;
-  width: 800px;
+  width: 850px;
   height: 400px;
   background-repeat: none;
   background-size:100% 100%;
@@ -30,11 +30,11 @@
 }
 .text{
   color:white;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .blackGlass{
-  background: rgba(0,0,0,0.4);
-  width:800px;
+  background: rgba(0,0,0,0.5);
+  width:900px;
   height: 100px;
 }
 .Navigation{
@@ -66,5 +66,5 @@
 }
 
 body{
-  background-color: rgb(186, 183, 183);
+  background-color: rgb(208, 206, 206);
 }
