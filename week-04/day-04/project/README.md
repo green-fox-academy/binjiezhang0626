@@ -1,68 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# JavaScript image slider
 
-## Available Scripts
+## Project description
 
-In the project directory, you can run:
+Create a fully functional image gallery in React
 
-### `yarn start`
+### Design
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Gallery mockup](slider.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[Arrow asset](arrow.svg)
 
-### `yarn test`
+## User stories
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Before you start to code
 
-### `yarn build`
+- Imagine what you have to do
+- Create sketch-up(s) to help plan your Components
+- Figure out gallery data structure and make sure the program is data driven
+- Design your code
+- Plan your components state
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Layout and behaviour specification
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- As it is an image gallery, it should look nice. The design should be very
+  similar to the example above. Plus, it should have a title as well.
+- It should be in the middle of the screen, with fixed size.
+- The image side ratio should be 16:9
+- The gallery's content should be divided into two main parts: to the photo
+  viewer and to the thumbnails.
+- The photo viewer block should contain the two arrow buttons on the sides and
+  the currently chosen photo in the middle.
+- The thumbnails part should contain - as its name says - the small thumbnails,
+  under the photo viewer block.
+- The currently showed photo should have a half transparent description block on
+  the bottom, with the photo's title and story.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Navigation/Interaction
 
-### `yarn eject`
+- As we open the gallery the first picture from our collection should appear in
+  the photo viewer area
+- The related (first) thumbnail should be marked as active as well (outline,
+  border.. etc.)
+- By clicking on the arrow buttons on the sides, the content of the viewer block
+  (the photo and its description) should change to the next or previous item.
+- At the same time, the current thumbnail's outline/box-shadow should change
+  based on the currently picked photo.
+- If the gallery displays the first image, pressing the previous button should
+  show the last one.
+- If the gallery displays the last image, pressing the next button should show
+  the first one.
+- By clicking on a thumbnail, the image displays in the viewer area.
+- The arrow buttons, the viewer area's content and the thumbnail's
+  outline/border should work synchronously.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### After you finished everything
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Do some little enhancements
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Deploy it to your own [github page](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f) 
+- Work more on your navigation
+  - The gallery can be controlled by the arrow keys.
+  - The gallery should handle "infinite amount" of images, so the thumbnails
+    should be scrollable to (implementation is up to you)
+- Work more on your thumbnails
+  - When hovering over a thumbnail, the cursor should be a pointer.
+  - When hovering over a thumbnail, a pop-up should appear with the title of
+    the picture.
