@@ -16,11 +16,11 @@ class App extends React.Component{
     return(
       <div className="App">
         <div className="Screen">
-          <div className="left">
+          <div className="Bar">
             <div className="arrow"></div>
           </div>
           <BigImg index={this.state.index} images={Img}/>
-          <div className="right">
+          <div className="Bar">
           <div className="arrow"></div>
           </div>
         </div>
