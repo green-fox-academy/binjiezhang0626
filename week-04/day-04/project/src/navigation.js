@@ -8,17 +8,17 @@ const Images = [
     './pictures/Newyork.jpeg',
     './pictures/Paris.jpeg',
     './pictures/Switzerland.jpeg'
-  ];
+];
 function Navigation(props) {
     return (
         <div className="Navigation">
             {
-                Images.map((image,index) => {
-                    return <div className="item" style={{'backgroundImage': `url(${image})`}} onClick={() => props.changeIndex(index)}></div>
+                Images.map((image, index) => {
+                    return <div className="item" style={{ 'backgroundImage': `url(${image})` }} onClick={() => props.changeIndexOnClick(index)}></div>
                 })
             }
         </div>
-    ) 
+    )
 }
 
 export default Navigation;

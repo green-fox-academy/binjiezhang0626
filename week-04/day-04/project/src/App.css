@@ -54,12 +54,17 @@
   background-repeat: no-repeat;
 }
 .arrow{
+  margin: 0 auto;
   display: flex;
-  align-content: center;
   width: 15px;
   height: 23px;
   background-image: url('./arrow.svg');
 }
+
+.right{
+  transform: scaleX(-1);
+}
+
 body{
   background-color: rgb(186, 183, 183);
 }
