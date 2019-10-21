@@ -29,3 +29,7 @@
   background-color: #6495ed;
   margin-bottom: 1em;
 }
+
+.remove {
+  background-color:red;
+}

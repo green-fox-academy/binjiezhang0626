@@ -9,7 +9,7 @@ const RemoveTag = (props) => {
                 {props.tags.map(tag => (
                     <li
                         key={tag}
-                        className='element'
+                        className='element remove'
                         onClick={() => props.removeTag(tag)}
                     >
                         {tag}
