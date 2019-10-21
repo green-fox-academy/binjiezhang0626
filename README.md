@@ -1,1 +1,1 @@
-# EPAN Javascript Academy Repo
+# EPAM Javascript Academy Repo
