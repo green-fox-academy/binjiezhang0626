@@ -14,7 +14,8 @@ function Navigation(props) {
         <div className="Navigation">
             {
                 Images.map((image, index) => {
-                    return <div className="item" style={{ 'backgroundImage': `url(${image})` }} onClick={() => props.changeIndexOnClick(index)}></div>
+                    return <div className="item" style={{ 'backgroundImage': `url(${image})` }} 
+                    onClick={() => props.changeIndexOnClick(index)}></div>
                 })
             }
         </div>
