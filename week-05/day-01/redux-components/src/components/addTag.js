@@ -6,11 +6,10 @@ const AddTag = (props) => {
     const [value, setValue] = useState('')
 
     const handleChange = event => {
-        // event.preventDefault()
         setValue(event.target.value)
     }
 
-    const handleClick = value => {
+    const handleClick = () => {
         props.addTag(value)
         setValue('')
     }
@@ -19,7 +18,7 @@ const AddTag = (props) => {
         <div>
             <h1>Add Tag</h1>
             <input type="text" onChange={handleChange} value={value} />
-            <button onClick={() => handleClick(value)}>Add</button>
+            <button onClick={handleClick}>Add</button>
         </div>
     )
 }

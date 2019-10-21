@@ -6,6 +6,7 @@ import Resetter from './components/resetter'
 import Setter from './components/setter'
 import Tags from './components/tags'
 import AddTag from './components/addTag';
+import RemoveTag from './components/removeTag';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Setter />
       <Tags />
       <AddTag />
+      <RemoveTag />
     </div>
   );
 }
