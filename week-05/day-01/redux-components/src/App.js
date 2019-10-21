@@ -4,6 +4,8 @@ import Increaser from './components/increaser'
 import Decreaser from './components/decreaser'
 import Resetter from './components/resetter'
 import Setter from './components/setter'
+import Tags from './components/tags'
+import AddTag from './components/addTag';
 
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
       <Decreaser />
       <Resetter />
       <Setter />
+      <Tags />
+      <AddTag />
     </div>
   );
 }

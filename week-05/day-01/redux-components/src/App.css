@@ -20,3 +20,12 @@
 .App-link {
   color: #09d3ac;
 }
+
+.list {
+  list-style: none;
+}
+
+.element {
+  background-color: #6495ed;
+  margin-bottom: 1em;
+}

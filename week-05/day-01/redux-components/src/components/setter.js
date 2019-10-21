@@ -1,4 +1,4 @@
-import React ,{ useState } from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 
 const Setter = (props) => {
@@ -16,17 +16,17 @@ const Setter = (props) => {
     return (
         <div className="increaser">
             <h1>The Setter</h1>
-            <input type="text" onChange={handleChange} value={value}></input>
+            <input type="number" onChange={handleChange} value={value}></input>
             <button onClick={handleClick}>Set</button>
         </div>
     )
 }
 
-// const mapStateToProps = state => {
-//     return {
-//         counter: state.counter
-//     }
-// }
+const mapStateToProps = state => {
+    return {
+        counter: state.counter
+    }
+}
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -36,4 +36,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(Setter)
+export default connect(mapStateToProps, mapDispatchToProps)(Setter)
