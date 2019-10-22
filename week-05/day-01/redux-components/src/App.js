@@ -8,6 +8,7 @@ import Tags from './components/tags'
 import AddTag from './components/addTag';
 import RemoveTag from './components/removeTag';
 import RemoveAllTag from './components/removeAllTag'
+import ComplexCounter from './components/complexCounter'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Setter />
       <Tags />
       <AddTag />
+      <ComplexCounter />
       <RemoveTag />
       <RemoveAllTag />
     </div>

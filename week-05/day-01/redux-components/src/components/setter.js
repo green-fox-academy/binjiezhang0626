@@ -14,7 +14,7 @@ const Setter = (props) => {
     }
     console.log(props)
     return (
-        <div className="increaser">
+        <div className="setter">
             <h1>The Setter</h1>
             <input type="number" onChange={handleChange} value={value}></input>
             <button onClick={handleClick}>Set</button>

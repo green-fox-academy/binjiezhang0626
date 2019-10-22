@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const RemoveTag = (props) => {
     return (
-        <div className="tags">
+        <div className="removeTags">
             <h1>Remove Tags</h1>
             <ul className='list'>
                 {props.tags.map(tag => (

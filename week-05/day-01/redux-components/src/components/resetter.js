@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 const Resetter = (props) => {
     console.log(props)
     return (
-        <div className="increaser">
+        <div className="resetter">
             <h1>The Resetter</h1>
             <p>{props.counter}</p>
             <button onClick={props.resetter}>Reset</button>

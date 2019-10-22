@@ -15,7 +15,7 @@ const AddTag = (props) => {
     }
     console.log(props)
     return (
-        <div>
+        <div className="addTag">
             <h1>Add Tag</h1>
             <input type="text" onChange={handleChange} value={value} />
             <button onClick={handleClick}>Add</button>
