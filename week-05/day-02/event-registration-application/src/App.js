@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-
+const initState = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  registration: []
+}
 class App extends Component {
   constructor() {
     super()
-    this.state = {
-      firstName: "",
-      lastName: "",
-      email: "",
-      registration: []
-    }
+    this.state = initState
   }
   handleChange = event => {
     let { name, value } = event.target
