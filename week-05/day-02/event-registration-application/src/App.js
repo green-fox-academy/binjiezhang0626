@@ -10,7 +10,6 @@ class App extends Component {
       email: "",
       registration: []
     }
-    this.handleChange = this.handleChange.bind(this)
   }
   handleChange = event => {
     let { name, value } = event.target
