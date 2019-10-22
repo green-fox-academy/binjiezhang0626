@@ -77,7 +77,6 @@ class App extends Component {
         <button disabled={!this.validate()}>Submit</button>
       </form>
     );
-
   }
 }
 
