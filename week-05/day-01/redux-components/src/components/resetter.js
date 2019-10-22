@@ -6,7 +6,6 @@ const Resetter = (props) => {
     return (
         <div className="resetter">
             <h1>The Resetter</h1>
-            <p>{props.counter}</p>
             <button onClick={props.resetter}>Reset</button>
         </div>
     )

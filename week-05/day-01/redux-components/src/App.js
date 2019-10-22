@@ -14,15 +14,19 @@ import ComplexCounter from './components/complexCounter'
 function App() {
   return (
     <div className="App">
-      <Increaser />
-      <Decreaser />
-      <Resetter />
-      <Setter />
-      <Tags />
-      <AddTag />
-      <ComplexCounter />
-      <RemoveTag />
-      <RemoveAllTag />
+      <div className="line1">
+        <Increaser />
+        <Decreaser />
+        <Resetter />
+        <Setter />
+      </div>
+      <div className="line2">
+        <Tags />
+        <AddTag />
+        <ComplexCounter />
+        <RemoveTag />
+        <RemoveAllTag />
+      </div>
     </div>
   );
 }
