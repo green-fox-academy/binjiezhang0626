@@ -7,6 +7,7 @@ import Setter from './components/setter'
 import Tags from './components/tags'
 import AddTag from './components/addTag';
 import RemoveTag from './components/removeTag';
+import RemoveAllTag from './components/removeAllTag'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Tags />
       <AddTag />
       <RemoveTag />
+      <RemoveAllTag />
     </div>
   );
 }
