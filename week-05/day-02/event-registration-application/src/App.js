@@ -36,22 +36,23 @@ class App extends Component {
 
   render() {
     return (
-      <form className="form" onSubmit={this.handleSubmit}>
-        <h1>Registration Form</h1>
-        <input type="text" name="firstName" value={this.state.firstName} placeholder="First Name" onChange={this.handleChange} />
-        <input type="text" name="lastName" value={this.state.lastName} placeholder="Last Name" onChange={this.handleChange} />
-        <input type="text" name="email" value={this.state.email} placeholder="Email Address" onChange={this.handleChange} />
-        <br />
-        <button>Submit</button>
-        <ul className="registration">
-          {this.state.registration.map((user, index) => (
-            <li key={index}>
-              <p>{user.firstName} {user.lastName} {user.email}</p>
-            </li>
-          ))}
-        </ul>
-
-      </form>
+      <div className="App">
+        <form className="form" onSubmit={this.handleSubmit}>
+          <h1>Registration Form</h1>
+          <input type="text" name="firstName" value={this.state.firstName} placeholder="First Name" onChange={this.handleChange} />
+          <input type="text" name="lastName" value={this.state.lastName} placeholder="Last Name" onChange={this.handleChange} />
+          <input type="text" name="email" value={this.state.email} placeholder="Email Address" onChange={this.handleChange} />
+          <br />
+          <button>Submit</button>
+          <ul className="registration">
+            {this.state.registration.map((user, index) => (
+              <li key={index}>
+                <p>{user.firstName} {user.lastName} {user.email}</p>
+              </li>
+            ))}
+          </ul>
+        </form>
+      </div>
     );
   }
 

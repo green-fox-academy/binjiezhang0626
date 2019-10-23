@@ -34,7 +34,7 @@ class App extends Component {
     // if(!this.state.password.length >= 8) {
     //   passwordError = "Password must be at least 8 characters"
     // }
-    if (!username || !email.includes('@') || password.length<8) {
+    if (!username || !email.includes('@') || password.length < 8) {
       return false
     }
     return true
@@ -48,34 +48,37 @@ class App extends Component {
 
   render() {
     return (
-      <form className="form" onSubmit={this.handleSubmit}>
-        <h1>User registration</h1>
-        <input
-          type="text"
-          name="username"
-          value={this.state.username}
-          placeholder="Username"
-          onChange={this.handleChange} />
-        <div>{this.state.nameError}</div>
-        <br />
-        <input
-          type="email"
-          name="email"
-          value={this.state.email}
-          placeholder="Email Address"
-          onChange={this.handleChange} />
-        <div>{this.state.emailError}</div>
-        <br />
-        <input
-          type="password"
-          name="password"
-          value={this.state.password}
-          placeholder="Password"
-          onChange={this.handleChange} />
-        <div>{this.state.passwordError}</div>
-        <br />
-        <button disabled={!this.validate()}>Submit</button>
-      </form>
+      <div className="App">
+        <form className="form" onSubmit={this.handleSubmit}>
+          <h1>User registration</h1>
+          <input
+            type="text"
+            name="username"
+            value={this.state.username}
+            placeholder="Username"
+            onChange={this.handleChange} />
+          <div>{this.state.nameError}</div>
+          <br />
+          <input
+            type="email"
+            name="email"
+            value={this.state.email}
+            placeholder="Email Address"
+            onChange={this.handleChange} />
+          <div>{this.state.emailError}</div>
+          <br />
+          <input
+            type="password"
+            name="password"
+            value={this.state.password}
+            placeholder="Password"
+            onChange={this.handleChange} />
+          <div>{this.state.passwordError}</div>
+          <br />
+          <button disabled={!this.validate()}>Submit</button>
+        </form>
+      </div>
+
     );
   }
 }
