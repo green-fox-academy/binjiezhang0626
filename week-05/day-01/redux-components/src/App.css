@@ -33,12 +33,9 @@
 .remove {
   background-color:red;
 }
-.line1 {
+.line {
   display: flex;
   justify-content: space-between;
 }
-.line2 {
-  display: flex;
-  justify-content: space-between;
-}
+
 
