@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+</head>
+
+<body>
+    <h1><%= title %></h1>
+    <ul>
+         <% alcoholList.forEach(function (alcohol) { %>
+        <li><%= alcohol %></li>
+        <% }) %>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>PRICE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% cocktails.forEach(function (cocktail) { %>
+            <tr>
+                <td>
+                    <h5><%= cocktail.name %> <span><%= cocktail.isAlcoholic ? "" : "(no-Alcoholic)" %></span></h5>
+                    <p><%= cocktail.contains %></p>
+                </td>
+                <td><%= cocktail.price %> Ft</td>
+            </tr>
+            <% }) %>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

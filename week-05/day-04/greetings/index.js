@@ -5,10 +5,10 @@ const PORT = 3000
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-    const { query } = req
-    res.render('home', { 
+    res.render('home', {
         title: 'Greetings',
-        query })
+        query:req.query
+    })
 })
 
 app.listen(PORT, () => {
