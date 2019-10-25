@@ -15,13 +15,20 @@ const cocktails = [
 
 const alcoholList = ['gin', 'vodka', 'rum', 'tequila']
 
+
+const alcoholFilter = type => {
+    return cocktails.filter(cocktail => {
+        return cocktail.contains.includes(type);
+    })
+}
+
+app.use('/static', express.static('static'));
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
     res.render('home', {
         title: 'Cocktails',
-        query: req.query,
-        cocktails,
+        cocktails: req.query.alcohol ? alcoholFilter(req.query.alcohol) : cocktails,
         alcoholList
     })
 })

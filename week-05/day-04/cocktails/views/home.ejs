@@ -3,16 +3,24 @@
 
 <head>
     <meta charset="utf-8">
-    <title><%= title %></title>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
 </head>
 
 <body>
-    <h1><%= title %></h1>
-    <ul>
-         <% alcoholList.forEach(function (alcohol) { %>
-        <li><%= alcohol %></li>
-        <% }) %>
-    </ul>
+    <h1>
+        <%= title %>
+    </h1>
+    <div>
+        <a href="/">All</a>
+        <% alcoholList.forEach( alcohol =>{%>
+            <a href="<%= " /?alcohol="+alcohol %>">
+                <%= alcohol %>
+            </a>
+            <%})%>
+    </div>
     <table>
         <thead>
             <tr>
@@ -21,15 +29,19 @@
             </tr>
         </thead>
         <tbody>
-            <% cocktails.forEach(function (cocktail) { %>
-            <tr>
-                <td>
-                    <h5><%= cocktail.name %> <span><%= cocktail.isAlcoholic ? "" : "(no-Alcoholic)" %></span></h5>
-                    <p><%= cocktail.contains %></p>
-                </td>
-                <td><%= cocktail.price %> Ft</td>
-            </tr>
-            <% }) %>
+            <% cocktails.forEach( cocktail => { %>
+                <tr>
+                    <td>
+                        <h5>
+                            <%= cocktail.name %> <span><%= cocktail.isAlcoholic ? "" : "(no-Alcoholic)" %></span></h5>
+                        <p>
+                            <%= cocktail.contains %>
+                        </p>
+                    </td>
+                    <td className="price">
+                        <%= cocktail.price %> Ft</td>
+                </tr>
+                <% }) %>
 
         </tbody>
     </table>

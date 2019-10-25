@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+a {
+    text-transform: uppercase;
+    margin-right: 2em;
+}
+
+table,
+td {
+    width: 40em;
+    height: 4em;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
