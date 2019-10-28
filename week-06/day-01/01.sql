@@ -1,3 +1,4 @@
+-- SQL Movie-Rating Query Exercises --
 -- q1 --
 SELECT title FROM Movie
 WHERE director = "Steven Spielberg";
@@ -24,3 +25,19 @@ ORDER BY
   Reviewer.name,
   Movie.title,
   Rating.stars;
+
+-- SQL Movie-Rating Query Exercises Extras --
+-- q1 --
+SELECT DISTINCT Reviewer.name FROM Movie,Reviewer,Rating
+WHERE Movie.title = "Gone with the Wind"
+      AND Movie.mID = Rating.mID
+      And Rating.rID = Reviewer.rID;
+-- q2 --
+SELECT
+  Reviewer.name,
+  Movie.title,
+  Rating.stars
+FROM Movie,Reviewer,Rating
+WHERE Movie.mID = Rating.mID
+  AND Rating.rID = Reviewer.rID
+  AND Movie.director = Reviewer.name;
