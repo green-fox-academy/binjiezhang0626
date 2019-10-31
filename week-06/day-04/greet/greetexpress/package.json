@@ -1,0 +1,14 @@
+{
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1"
+    },
+    "name": "greetexpress",
+    "version": "1.0.0",
+    "main": "greet-express.js",
+    "author": "binjie",
+    "license": "MIT",
+    "scripts": {
+        "start": "node greet-express.js"
+    }
+}

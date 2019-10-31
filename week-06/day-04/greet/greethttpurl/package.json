@@ -1,0 +1,13 @@
+{
+    "name": "greethttpurl",
+    "version": "1.0.0",
+    "main": "greet.js",
+    "author": "binjie",
+    "license": "MIT",
+    "scripts": {
+        "start": "node greet.js"
+    },
+    "dependencies": {
+        "dotenv": "^8.2.0"
+    }
+}
