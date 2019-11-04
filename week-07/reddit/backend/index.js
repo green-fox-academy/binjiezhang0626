@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require('express')
-const queryWithPromise = require('./backend/db.js')
-const service = require('./backend/service.js')
+const queryWithPromise = require('./db.js')
+const service = require('./service.js')
 const port = process.env.PORT
 const app = express()
 
