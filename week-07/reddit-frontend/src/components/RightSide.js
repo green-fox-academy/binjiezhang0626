@@ -1,9 +1,14 @@
 import React from "react";
 
-const RightSide = () => {
+const RightSide = props => {
+  const { history } = props;
+  const handleClick = event => {
+    event.preventDefault();
+    history.push("/newpost");
+  };
   return (
     <div className="RightSide">
-      <button>SUBMIT A NEW POST</button>
+      <button onClick={handleClick}>SUBMIT A NEW POST</button>
       <h3>About</h3>
     </div>
   );

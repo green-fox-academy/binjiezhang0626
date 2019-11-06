@@ -1,4 +1,5 @@
 const FETCHED_POSTS = "FETCHED_POSTS";
+const FETCHED_ADDPOST = "FETCHED_ADDPOST";
 
 const fetchPostsAction = () => {
   return async dispatch => {
@@ -16,5 +17,19 @@ const fetchPostsAction = () => {
     }
   };
 };
+const fetchAddPostAction = (title, url) => {
+  return async dispatch => {
+    const result = await fetch(" http://localhost:3001/api/posts/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ title, url })
+    });
+    const data = await result.json();
+    dispatch({
+      type: FETCHED_ADDPOST,
+      post: data
+    });
+  };
+};
 
-export { fetchPostsAction, FETCHED_POSTS };
+export { fetchPostsAction, fetchAddPostAction, FETCHED_POSTS, FETCHED_ADDPOST };

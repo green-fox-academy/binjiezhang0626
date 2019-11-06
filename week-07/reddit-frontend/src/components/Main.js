@@ -2,11 +2,11 @@ import React from "react";
 import Posts from "./Posts";
 import RightSide from "./RightSide";
 
-const Main = () => {
+const Main = props => {
   return (
     <div className="Body">
       <Posts />
-      <RightSide />
+      <RightSide history={props.history} />
     </div>
   );
 };
