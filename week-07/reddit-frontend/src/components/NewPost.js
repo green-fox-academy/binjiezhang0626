@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { fetchAddPostAction } from "../actions";
 
-const NewPost = props => {
-  const { history, addPost } = props;
+const NewPost = ({ history, addPost }) => {
   const [title, setTitle] = useState("");
   const [url, setUrl] = useState("");
+
   const handleChange = event => {
     event.target.id === "title"
       ? setTitle(event.target.value)
       : setUrl(event.target.value);
   };
+
   const handleSubmit = event => {
     event.preventDefault();
     addPost(title, url);

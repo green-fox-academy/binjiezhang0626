@@ -1,10 +1,10 @@
-import { FETCHED_POSTS, FETCHED_ADDPOST } from "./actions";
+import { FETCHED_POSTS, FETCHED_ADDPOST, FETCHED_VOTE } from "./actions";
 
 const initState = {
   posts: []
 };
 
-export default function(state = initState, action) {
+const rootReducer = (state = initState, action) => {
   if (action.type === FETCHED_POSTS) {
     return {
       posts: action.posts
@@ -15,5 +15,17 @@ export default function(state = initState, action) {
       posts: [...state.posts, action.post]
     };
   }
+  if (action.type === FETCHED_VOTE) {
+    const updateState = (posts, updatedPost) => {
+      posts = posts.map(post =>
+        post.id === updatedPost.id ? updatedPost : post
+      );
+      return posts;
+    };
+    return {
+      posts: updateState(state.posts, action.post)
+    };
+  }
   return state;
-}
+};
+export default rootReducer;

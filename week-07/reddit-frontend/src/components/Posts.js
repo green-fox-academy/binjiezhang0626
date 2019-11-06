@@ -3,15 +3,15 @@ import { connect } from "react-redux";
 import Post from "./Post";
 import { fetchPostsAction } from "../actions";
 
-const Posts = ({ fetchPosts, posts }) => {
+const Posts = ({ posts, fetchPosts }) => {
   useEffect(() => {
     fetchPosts();
   }, []);
 
   return (
     <div className="Posts">
-      {posts.map((post, key) => (
-        <Post post={post} key={key} />
+      {posts.map((post, index) => (
+        <Post post={post} key={index} />
       ))}
     </div>
   );

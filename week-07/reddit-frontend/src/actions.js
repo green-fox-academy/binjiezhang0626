@@ -1,10 +1,14 @@
 const FETCHED_POSTS = "FETCHED_POSTS";
 const FETCHED_ADDPOST = "FETCHED_ADDPOST";
+const FETCHED_VOTE = "FETCHED_VOTE";
 
 const fetchPostsAction = () => {
   return async dispatch => {
     try {
-      const result = await fetch(" http://localhost:3001/api/posts/");
+      const result = await fetch(" http://localhost:3001/api/posts/", {
+        method: "GET",
+        headers: { "Content-Type": "application/json" }
+      });
       console.log(result);
       const data = await result.json();
       console.log(data);
@@ -31,5 +35,28 @@ const fetchAddPostAction = (title, url) => {
     });
   };
 };
+const fetchVoteAction = (id, vote) => {
+  return async dispatch => {
+    const result = await fetch(
+      `http://localhost:3001/api/posts/${id}/${vote}`,
+      {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" }
+      }
+    );
+    const data = await result.json();
+    dispatch({
+      type: FETCHED_VOTE,
+      post: data
+    });
+  };
+};
 
-export { fetchPostsAction, fetchAddPostAction, FETCHED_POSTS, FETCHED_ADDPOST };
+export {
+  fetchPostsAction,
+  fetchAddPostAction,
+  fetchVoteAction,
+  FETCHED_POSTS,
+  FETCHED_ADDPOST,
+  FETCHED_VOTE
+};
