@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { fetchAddPostAction } from "../actions";
+import { fetchAddPostAction } from "../../actions";
 
 const NewPost = ({ history, addPost }) => {
   const [title, setTitle] = useState("");
@@ -20,7 +20,8 @@ const NewPost = ({ history, addPost }) => {
   return (
     <div className="Body">
       <form className="form" onSubmit={handleSubmit}>
-        <input
+        <h5>Title</h5>
+        <textarea
           type="text"
           name="title"
           id="title"
@@ -28,7 +29,7 @@ const NewPost = ({ history, addPost }) => {
           onChange={handleChange}
           value={title}
         />
-        <br />
+        <h5>Url</h5>
         <input
           type="text"
           name="url"

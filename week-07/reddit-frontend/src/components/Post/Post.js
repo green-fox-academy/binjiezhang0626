@@ -1,6 +1,7 @@
 import React from "react";
+import style from "./Post.module.css";
 import { connect } from "react-redux";
-import { fetchVoteAction } from "../actions";
+import { fetchVoteAction } from "../../actions";
 
 const Post = ({ post, vote }) => {
   const upvote = () => {
@@ -17,13 +18,13 @@ const Post = ({ post, vote }) => {
   };
 
   return (
-    <div className="post">
-      <div className="vote">
-        <div className="upvote" onClick={upvote}></div>
+    <div className={style.post}>
+      <div className={style.vote}>
+        <div className={style.upvote} onClick={upvote}></div>
         <span>{post.score}</span>
-        <div className="downvote" onClick={downvote}></div>
+        <div className={style.downvote} onClick={downvote}></div>
       </div>
-      <div className="content">
+      <div className={style.content}>
         <span>{post.title}</span>
         <br />
         <span>{post.url}</span>

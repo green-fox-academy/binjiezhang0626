@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import Post from "./Post";
-import { fetchPostsAction } from "../actions";
+import Post from "../Post/Post";
+import { fetchPostsAction } from "../../actions";
 
 const Posts = ({ posts, fetchPosts }) => {
   useEffect(() => {

@@ -7,15 +7,6 @@
   height: 40vmin;
 }
 
-.App-header {
-  background-image: url(./galaxy.jpeg);
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
 
 .App-link {
   color: #09d3ac;
@@ -31,7 +22,6 @@
 }
 .Posts{
   margin-top:50px;
-  background-color: whitesmoke;
   height:600px;
   width:800px;
 }
@@ -49,38 +39,4 @@
 }
 h2{
   color:white;
-}
-.vote{  
-  width: 2em;
-  height: 6em;
-}
-.content{
-  width:500px;
-  height:6em;
-}
-.upvote {
-  background-image: url('./upvote.png');
-  background-size: contain;
-  width: 2em;
-  height: 2em;
-  cursor: pointer;
-}
-
-.score {
-  font-weight: 700;
-  line-height: 1.5em;
-}
-
-.downvote {
-  background-image: url('./downvote.png');
-  background-size: contain;
-  width: 2em;
-  height: 2em;
-  cursor: pointer;
-}
-.post{
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }

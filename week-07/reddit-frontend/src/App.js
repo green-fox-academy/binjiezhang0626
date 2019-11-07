@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import NewPost from "./components/NewPost";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import NewPost from "./components/NewPost/NewPost";
 
 function App() {
   return (
